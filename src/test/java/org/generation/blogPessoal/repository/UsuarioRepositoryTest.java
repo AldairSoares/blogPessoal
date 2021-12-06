@@ -28,13 +28,13 @@ import org.junit.jupiter.api.BeforeAll;
 		@BeforeAll
 		void start(){
 
-			usuarioRepository.save(new Usuario(0L, "João da Silva", "joao@email.com.br", "foto","13465278"));
+			usuarioRepository.save(new Usuario(0L, "João da Silva", "joao@email.com.br", "foto","13465278","tipo"));
 			
-			usuarioRepository.save(new Usuario(0L, "Manuela da Silva", "manuela@email.com.br","foto","13465278"));
+			usuarioRepository.save(new Usuario(0L, "Manuela da Silva", "manuela@email.com.br","foto","13465278","tipo"));
 			
-			usuarioRepository.save(new Usuario(0L, "Adriana da Silva", "adriana@email.com.br","foto","13465278"));
+			usuarioRepository.save(new Usuario(0L, "Adriana da Silva", "adriana@email.com.br","foto","13465278","tipo"));
 
-	        usuarioRepository.save(new Usuario(0L, "Paulo Antunes", "paulo@email.com.br","foto","13465278"));
+	        usuarioRepository.save(new Usuario(0L, "Paulo Antunes", "paulo@email.com.br","foto","13465278", "tipo"));
 	        
 		}
 
