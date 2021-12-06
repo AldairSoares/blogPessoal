@@ -45,6 +45,7 @@ public class Usuario {
 	@Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
 	private String senha;
 	
+	private String tipo;
 
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
@@ -71,12 +72,13 @@ public class Usuario {
 	 */
 
 
-	public Usuario(long id, String nome, String usuario,String foto,String senha) {
+	public Usuario(long id, String nome, String usuario,String foto,String senha, String tipo) {
 		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.foto = foto;
 		this.senha = senha;
+		this.tipo = tipo;
 	}
 
 
@@ -152,5 +154,16 @@ public class Usuario {
 	}
 
 
+
+	public String getTipo() {
+		return tipo;
+	}
+
+
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
 
 }
