@@ -26,6 +26,8 @@ public class UsuarioLogin {
 	
 	private String foto;
 	
+	private String tipo;
+	
 	@NotBlank
 	@Size(min =8, max =100, message = "Write at least 8 characters")
 	private String senha;
@@ -80,6 +82,14 @@ public class UsuarioLogin {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 	
 	
