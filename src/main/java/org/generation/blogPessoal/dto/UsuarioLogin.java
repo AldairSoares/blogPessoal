@@ -17,8 +17,7 @@ public class UsuarioLogin {
 	private long id;
 	
 	
-	@NotBlank
-	@Size(min =3, max =100, message = "Write at least 8 characters")
+	
 	private String nome;
 	
 	@NotBlank(message = "Insert a valid username")
