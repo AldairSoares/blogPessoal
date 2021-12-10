@@ -20,18 +20,15 @@ public class UsuarioLogin {
 	
 	private String nome;
 	
-	@NotBlank(message = "Insert a valid username")
 	private String usuario;
 	
 	private String foto;
 	
 	private String tipo;
 	
-	@NotBlank
-	@Size(min =8, max =100, message = "Write at least 8 characters")
 	private String senha;
 	
-	@NotNull
+	
 	private String token;
 	
 	
